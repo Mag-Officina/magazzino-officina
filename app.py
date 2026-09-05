@@ -7,9 +7,9 @@ st.markdown(
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .stAppDeployButton {display:none;}
-    [data-testid="stToolbar"] {visibility: hidden !important;}
-    [data-testid="stDecoration"] {display:none;}
-    [data-testid="stStatusWidget"] {visibility: hidden;}
+    [data-testid="stToolbar"] {visibility: hidden !important; display: none !important;}
+    [data-testid="stHeader"] {visibility: hidden !important; display: none !important;}
+    .viewerBadge_container__1QSob, .styles_viewerBadge__1yB5_, [data-testid="stStatusWidget"] {display: none !important;}
     </style>
     """,
     unsafe_allow_html=True,
