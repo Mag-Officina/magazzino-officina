@@ -1,13 +1,19 @@
 import streamlit as st
-hide_streamlit_style = """
+
+st.markdown(
+    """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    .stAppDeployButton {display:none;}
     [data-testid="stToolbar"] {visibility: hidden !important;}
+    [data-testid="stDecoration"] {display:none;}
+    [data-testid="stStatusWidget"] {visibility: hidden;}
     </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True,
+)
 import pandas as pd
 from datetime import datetime
 import os
